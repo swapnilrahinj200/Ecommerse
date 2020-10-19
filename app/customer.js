@@ -1,13 +1,13 @@
 var express=require('express');
 var app=express();
 
-var products=[
+var custumers=[
 	      {id:100,"name":"cust1"},
               {id:101,"name":"cust2"}
 	     ];
 			  
 app.get('/a',function(req,res){
-    res.send(products);
+    res.send(custumers);
 })
 
 app.listen('9000',function(){
